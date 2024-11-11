@@ -1,100 +1,124 @@
-
-<html><meta charset='UTF-8'/><meta content='width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5' name='viewport'/><meta content='IE=edge' http-equiv='X-UA-Compatible'/>
+<html>
+  <meta charset="UTF-8" /><meta
+    content="width=device-width, initial-scale=1, user-scalable=1, minimum-scale=1, maximum-scale=5"
+    name="viewport" /><meta content="IE=edge" http-equiv="X-UA-Compatible" />
 
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.19/dist/sweetalert2.all.min.js"></script>
   <script src="https://unpkg.com/typeit@8.7.0/dist/index.umd.js"></script>
-  <link href="https://muftimustaqim.github.io/drl/style.css" rel="stylesheet" type="text/css" />
+  <link
+    href="https://md-restqim.github.io/z/style.css"
+    rel="stylesheet"
+    type="text/css" />
 
-<head>
-<title>Semangat</title>
-<link rel="icon" type="image/x-icon" href="https://muftimustaqim.github.io/drl/favicon.png">
-</head>
-<body>
-	
-   <div id="bodyblur">
-     <!-- Wallpaper / Background --><img src="https://muftimustaqim.github.io/drl/asd.jpg" id="wallpaper"/>
-   </div>
-  
-  <div class="kumpulanstiker">
-         <!-- Stiker untuk Konten -->
-         <img src="https://muftimustaqim.github.io/drl/bunga.gif" id="fotoakhir1"/>
-         <img src="https://muftimustaqim.github.io/drl/mndkat.gif" id="fotoakhir2"/>
-         <img src="https://muftimustaqim.github.io/drl/bber.gif" id="fotoakhir3"/>
-         <img src="https://muftimustaqim.github.io/drl/tinju.gif" id="fotoakhir4"/>
-  </div>
+  <head>
+    <title>Semangat</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://md-restqim.github.io/z/favicon.png" />
+  </head>
+  <body>
+    <div id="bodyblur">
+      <!-- Wallpaper / Background --><img
+        src="https://md-restqim.github.io/z/asd.jpg"
+        id="wallpaper" />
+    </div>
 
-   <div id='Content'>
-   	
-     <div id="suratin" onClick="memulai();audio.play();">
-       <!-- Surat --><img src="https://muftimustaqim.github.io/drl/envelope.png"/>
-     </div>
-     <p id="ket">Klik Suratnya!</p>
-   
-     <div><!-- Foto Akhir --><img src="https://muftimustaqim.github.io/drl/emawh.gif" id="fotoakhir" /></div>
-     <div><blockquote id='bq'>
-       <p id="kalimat"></p>
-       <p id="kalimatc"></p>
-     </blockquote></div>
-   
-     <!-- Tombol Kirim Pesan -->
-     <div id="Tombol">
-       <a onClick="sjawab()">
-         <b>💌 Balas</b>
-       </a>
-     </div>
-     
-   </div>
+    <div class="kumpulanstiker">
+      <!-- Stiker untuk Konten -->
+      <img src="https://md-restqim.github.io/z/bunga.gif" id="fotoakhir1" />
+      <img src="https://md-restqim.github.io/z/mndkat.gif" id="fotoakhir2" />
+      <img src="https://md-restqim.github.io/z/bber.gif" id="fotoakhir3" />
+      <img src="https://md-restqim.github.io/z/tinju.gif" id="fotoakhir4" />
+    </div>
 
-<!-- <div class='sticky-ad' id='sticky-ad'>
+    <div id="Content">
+      <div id="suratin" onClick="memulai();audio.play();">
+        <!-- Surat --><img src="https://md-restqim.github.io/z/envelope.png" />
+      </div>
+      <p id="ket">Klik Suratnya!</p>
+
+      <div>
+        <!-- Foto Akhir --><img
+          src="https://md-restqim.github.io/z/emawh.gif"
+          id="fotoakhir" />
+      </div>
+      <div>
+        <blockquote id="bq">
+          <p id="kalimat"></p>
+          <p id="kalimatc"></p>
+        </blockquote>
+      </div>
+
+      <!-- Tombol Kirim Pesan -->
+      <div id="Tombol">
+        <a onClick="sjawab()">
+          <b>💌 Balas</b>
+        </a>
+      </div>
+    </div>
+
+    <!-- <div class='sticky-ad' id='sticky-ad'>
  <div class='adB'><a rel="dofollow" href='https://bit.ly/htmlfeeldream'>Lihat Script HTML Lainnya di Sini!</a></div>
 <button aria-label='Close this ad' class='sticky-ad-close-button' onclick='hilangkan();'/>
 </div> -->
 
-<script src="https://muftimustaqim.github.io/drl/script.js"></script>
+    <script src="https://md-restqim.github.io/z/script.js"></script>
 
-<!-- Ganti Kata², Foto, Lagu di bawah ya
+    <!-- Ganti Kata², Foto, Lagu di bawah ya
 1) Upload foto ke https://postimages.org
      buat dapetin linknya
 2) Ganti Lagu Upload ke replit.com
      atau bisa juga ke mailboxdrive.com -->
 
-<script type="text/javascript">
-       async function jawab(){await swals.fire('Kirim pesan ke WhatsApp aku, ya!');window.location = "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;}
+    <script type="text/javascript">
+      async function jawab() {
+        await swals.fire("Kirim pesan ke WhatsApp aku, ya!");
+        window.location =
+          "https://api.whatsapp.com/send?phone=&text=" + pesanwhatsapp;
+      }
 
-       async function pertama(){
-         audio = new Audio('https://muftimustaqim.github.io/drl/opening.mp3');setTimeout(showDiv,100);
-       } pertama();
+      async function pertama() {
+        audio = new Audio("https://md-restqim.github.io/z/opening.mp3");
+        setTimeout(showDiv, 100);
+      }
+      pertama();
 
-	  function tunjukkan(){document.getElementById("sticky-ad").style = "bottom: 0px";}
-  function hilangkan() {document.getElementById("sticky-ad").style = "bottom: -130px";}
-  
-  tunjukkan();
-	
-       
-       async function pesan(){
-             	await swalst.fire({
-                  title: 'Heyy kamuuu! 😍', 
-                  imageUrl: '' + fotoakhir1.src,
-                  });   	
-                 await swalst.fire({
-                  title: 'Semangat Jalani Harinya yaa 🥳',
-                  imageUrl: '' + fotoakhir2.src,
-                  });
-                 await swalst.fire({
-                  title: 'Tetap Jaga Kesehatan yaa 😇',
-                  imageUrl: '' + fotoakhir3.src,
-                  });
-                 await swalst.fire({
-                  title: 'Dan Jangan Telat Makan 😍',
-                  imageUrl: '' + fotoakhir4.src,
-                  });
-                  
-                  katangetik = "Oh iyaa, aku cuma mau bilang:<br>Kamu ngga boleh sedih yaa karena<br>aku akan selalu ada di sampingmu 💗<br><br>Dan kamu gausah takut aku<br>bakal pergi dari kamu yaa..";
-                  katangetik2 = "i'm always support you! ✨<br><br><i>i love uuuu 💞🤍💝❣️</i>";
-                  
-                  pesanwhatsapp = "i love you too 💞🤍💝❣️";
-                 setTimeout(kpemb,200);
-            }
-</script>
-</body>
+      function tunjukkan() {
+        document.getElementById("sticky-ad").style = "bottom: 0px";
+      }
+      function hilangkan() {
+        document.getElementById("sticky-ad").style = "bottom: -130px";
+      }
+
+      tunjukkan();
+
+      async function pesan() {
+        await swalst.fire({
+          title: "Heyy kamuuu! 😍",
+          imageUrl: "" + fotoakhir1.src,
+        });
+        await swalst.fire({
+          title: "Semangat Jalani Harinya yaa 🥳",
+          imageUrl: "" + fotoakhir2.src,
+        });
+        await swalst.fire({
+          title: "Tetap Jaga Kesehatan yaa 😇",
+          imageUrl: "" + fotoakhir3.src,
+        });
+        await swalst.fire({
+          title: "Dan Jangan Telat Makan 😍",
+          imageUrl: "" + fotoakhir4.src,
+        });
+
+        katangetik =
+          "Oh iyaa, aku cuma mau bilang:<br>Kamu ngga boleh sedih yaa karena<br>aku akan selalu ada di sampingmu 💗<br><br>Dan kamu gausah takut aku<br>bakal pergi dari kamu yaa..";
+        katangetik2 =
+          "i'm always support you! ✨<br><br><i>i love uuuu 💞🤍💝❣️</i>";
+
+        pesanwhatsapp = "i love you too 💞🤍💝❣️";
+        setTimeout(kpemb, 200);
+      }
+    </script>
+  </body>
 </html>
